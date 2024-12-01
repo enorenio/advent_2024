@@ -1,0 +1,11 @@
+# Ignore everything
+*
+
+# Except .cpp, .txt, and .json files
+!*.cpp
+!*.txt
+!*.json
+!*.gitignore
+
+# Except directories
+!*/
