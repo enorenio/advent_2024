@@ -22,8 +22,8 @@ int main() {
     infile.close();
     
     int sum = 0;
-    for (int i = 0; i < 1000; ++i) {
-        int similarity_score = left[i] * std::count(right.begin(), right.end(), left[i]);
+    for (auto integer : left) {
+        int similarity_score = integer * std::count(right.begin(), right.end(), integer);
         sum += similarity_score;
     }
 

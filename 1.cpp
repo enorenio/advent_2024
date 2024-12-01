@@ -23,8 +23,6 @@ int main() {
     
     std::sort(left.begin(), left.end());
     std::sort(right.begin(), right.end());
-
-    std::vector<int> diff(1000);
     
     int sum = std::inner_product(left.begin(), left.end(), right.begin(), 0, std::plus<>(),
         [](int a, int b) { return std::abs(a - b); });
